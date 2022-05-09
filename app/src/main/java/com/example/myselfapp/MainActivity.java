@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                     }
+
+                    assert selectedFragment != null;
                     getSupportFragmentManager()
                             .beginTransaction()
                             .replace(R.id.fragment_container,selectedFragment).commit();

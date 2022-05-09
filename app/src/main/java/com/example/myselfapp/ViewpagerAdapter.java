@@ -14,6 +14,7 @@ public class ViewpagerAdapter extends PagerAdapter {
     String[] texts = {
             "Halo Semuanyaaa",
             "Ini adalah Aplikasi milik Syariff",
+            "Semoga untuk aplikasi kedepannya lebih baik lagi"
     };
 
     int[] image = {

@@ -3,17 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/border.xml" value="0.317" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/ic_account.xml" value="0.194" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/ic_default.xml" value="0.194" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/ic_next.xml" value="0.194" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/ic_selected.xml" value="0.194" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable-v24/ic_selector.xml" value="0.194" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/drawable/ic_nav_home.xml" value="0.194" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/activity_main.xml" value="0.3578125" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/activity_view_pager.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/activity_viewpager.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_blank.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_daily.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_galery.xml" value="0.371875" />
-        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_home.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_music.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/fragment_profile.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/layout/viewpager_layout.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/MySelfApp/app/src/main/res/menu/bottom_nav.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/drawable-v24/border.xml" value="0.317" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/font/roboto.xml" value="0.40208333333333335" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/activity_splash_screen.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_daily.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_daily.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_friendlist.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/menu/bottom_nav.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.317" />
       </map>
     </option>
   </component>
