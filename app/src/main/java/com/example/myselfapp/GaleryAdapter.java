@@ -8,6 +8,10 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 import java.util.ArrayList;
 

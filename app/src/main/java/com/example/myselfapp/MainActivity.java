@@ -7,6 +7,10 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 public class MainActivity extends AppCompatActivity {
 

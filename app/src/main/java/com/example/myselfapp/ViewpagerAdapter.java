@@ -6,21 +6,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
+
 public class ViewpagerAdapter extends PagerAdapter {
     String[] texts = {
-            "Halo Semuanyaaa",
-            "Ini adalah Aplikasi milik Syariff",
-            "Semoga untuk aplikasi kedepannya lebih baik lagi"
+            "Hi, Semuanya",
+            "Selamat Datang di MySelfApp",
+            "Semoga Harimu Menyenangkan"
     };
 
     int[] image = {
-            R.drawable.viewpager1,
-            R.drawable.viewpager2,
-            R.drawable.viewpager3,
+            R.drawable.ic_viewpager_1,
+            R.drawable.ic_viewpager_2,
+            R.drawable.ic_viewpager_3,
     };
 
     Context ctx;

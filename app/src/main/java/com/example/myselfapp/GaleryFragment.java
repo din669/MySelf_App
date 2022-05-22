@@ -12,6 +12,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link GaleryFragment#newInstance} factory method to

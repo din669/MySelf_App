@@ -10,7 +10,7 @@
         android:id="@+id/view_pager_image"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/bghome"
+        android:background="@drawable/background2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,19 +30,18 @@
 
     <Button
         android:id="@+id/buttonnext"
-        android:layout_marginBottom="40dp"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
-        android:layout_marginEnd="15dp"
-        android:backgroundTint="#ffaa1c"
-        android:drawableEnd="@drawable/ic_next"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#ffaa1c"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="Skip"
+        android:textColor="@color/background2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="?android:attr/borderlessButtonStyle"
-        />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </RelativeLayout>

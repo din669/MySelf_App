@@ -3,16 +3,166 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="@color/background1"
+        >
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_marginTop="100sp"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/f_galery3"/>
+
+    <TextView
+        android:id="@+id/text_nama_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_profile"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:text="Muhammad Syarifuddin R"
+        android:textColor="@color/background1"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_desc_nama_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nama_profile"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:text="Informatics Student"
+        android:textColor="@color/background1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_desc_nama_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/roboto"
+        android:text="My Contact"
+        android:textColor="@color/background1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_contact"
+        android:layout_gravity="center"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/background1" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_contact"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/ic_email" />
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="40sp"
+            android:src="@drawable/ic_instagram" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_1"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_whatsapp"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="50sp"
+            android:src="@drawable/ic_whatsapp" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="50sp"
+            android:src="@drawable/ic_location" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/background1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/linear_2"
         android:layout_centerInParent="true"
-        android:text="PROFILE"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        ></TextView>
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/roboto"
+        android:text="About App"
+        android:textColor="@color/background1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/iv_about"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/linear_2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="80sp"
+        android:src="@drawable/ic_about" />
 
 
 </RelativeLayout>

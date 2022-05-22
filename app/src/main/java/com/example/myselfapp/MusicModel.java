@@ -1,5 +1,10 @@
 package com.example.myselfapp;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
+
 public class MusicModel {
 
     int image;

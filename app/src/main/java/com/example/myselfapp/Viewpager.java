@@ -6,8 +6,12 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
-
 import com.google.android.material.tabs.TabLayout;
+
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 public class Viewpager extends AppCompatActivity {
 

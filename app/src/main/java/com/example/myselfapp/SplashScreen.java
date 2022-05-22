@@ -7,6 +7,11 @@ import android.content.Intent;
 import android.os.Handler;
 import android.view.Window;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override

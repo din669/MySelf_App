@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:background="@color/bg_blue">
+        android:background="@color/white">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/ic_daily"
             android:layout_width="75dp"
             android:layout_height="75dp"
@@ -29,7 +29,7 @@
             android:layout_toRightOf="@+id/ic_daily"
             android:fontFamily="@font/roboto"
             android:text="Title"
-            android:textColor="@color/white"
+            android:textColor="@color/background1"
             android:textSize="16sp" />
 
 

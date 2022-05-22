@@ -4,8 +4,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.smarteist.autoimageslider.SliderViewAdapter;
+
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder>{
 

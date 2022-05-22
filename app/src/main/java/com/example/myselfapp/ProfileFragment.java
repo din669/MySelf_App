@@ -7,6 +7,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.content.Intent;
+import android.net.Uri;
+import androidx.fragment.app.Fragment;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +65,87 @@ public class ProfileFragment extends Fragment {
         }
     }
 
+    ImageView ivFacebook, ivInstagram, ivWhatsapp, ivMail, ivLocation, ivAbout;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View root = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        ivFacebook = root.findViewById(R.id.iv_facebook);
+        ivInstagram = root.findViewById(R.id.iv_instagram);
+        ivWhatsapp = root.findViewById(R.id.iv_whatsapp);
+        ivMail = root.findViewById(R.id.iv_email);
+        ivLocation = root.findViewById(R.id.iv_location);
+        ivAbout = root.findViewById(R.id.iv_about);
+
+
+        ivFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent facebook = new Intent();
+                facebook.setAction(Intent.ACTION_VIEW);
+                facebook.addCategory(Intent.CATEGORY_BROWSABLE);
+                facebook.setData(Uri.parse("https://www.facebook.com/din669/"));
+                startActivity(facebook);
+            }
+        });
+
+        ivInstagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent instagram = new Intent();
+                instagram.setAction(Intent.ACTION_VIEW);
+                instagram.addCategory(Intent.CATEGORY_BROWSABLE);
+                instagram.setData(Uri.parse("https://www.instagram.com/din_669/"));
+                startActivity(instagram);
+            }
+        });
+
+        ivWhatsapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent whatsapp = new Intent();
+                whatsapp.setAction(Intent.ACTION_VIEW);
+                whatsapp.addCategory(Intent.CATEGORY_BROWSABLE);
+                whatsapp.setData(Uri.parse("https://api.whatsapp.com/send?phone=6281320997849"));
+                startActivity(whatsapp);
+            }
+        });
+
+        ivMail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mail = new Intent();
+                mail.setAction(Intent.ACTION_VIEW);
+                mail.addCategory(Intent.CATEGORY_BROWSABLE);
+                mail.setData(Uri.parse("mailto:muhammadsyarifuddin669@gmail.com"));
+                startActivity(mail);
+            }
+        });
+
+        ivLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent location = new Intent();
+                location.setAction(Intent.ACTION_VIEW);
+                location.addCategory(Intent.CATEGORY_BROWSABLE);
+                location.setData(Uri.parse("https://goo.gl/maps/i9FSJ5RNCxAYMuoZ9"));
+                startActivity(location);
+            }
+        });
+
+        ivAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CostumDialog aboutDialog = new CostumDialog();
+                aboutDialog.show(getFragmentManager(),"AboutDialogFragment");
+            }
+        });
+
+        return root;
+
     }
 }

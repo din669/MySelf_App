@@ -1,198 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/lightblue"
-        android:orientation="vertical">
-
+    
     <RelativeLayout
         android:layout_marginTop="20dp"
+        android:id="@+id/profile_home"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        >
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/ic_homeprofile" />
-
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="50dp"
-            android:fontFamily="@font/roboto"
-            android:text="Muhammad Syarifuddin R"
-            android:textStyle="bold"
-            android:textSize="16dp"/>
+            android:layout_margin="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/white"
+            android:padding="20dp"
+            app:cardCornerRadius="12sp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="75dp"
-            android:fontFamily="@font/roboto"
-            android:text="Panggilan Udz, Syarif, Udin, Arif, Syarpud "
-            android:textSize="11dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="90dp"
-            android:fontFamily="@font/roboto"
-            android:text="Pemalu dan suka malu - maluin  "
-            android:textSize="11sp" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_profile_home"
+                    android:layout_width="110sp"
+                    android:layout_height="110sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_homeprofile"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare" />
 
+                <TextView
+                    android:id="@+id/nama_profile_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_toEndOf="@+id/img_profile_home"
+                    android:layout_toRightOf="@+id/img_profile_home"
+                    android:text="Muhammad Syarifuddin R"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/background1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/desc_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_profile_home"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_toRightOf="@+id/img_profile_home"
+                    android:maxLines="4"
+                    android:text="INFORMATICS STUDENT"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/background1"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:id="@+id/interest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/profile_home"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:text="MY FAVORITE"
+        android:textColor="@color/background1"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/desc_profile_home"
+        android:layout_below="@id/interest"
         android:layout_marginStart="20dp"
-        android:background="@drawable/border"
-        >
-        <GridLayout
-            android:layout_width="390dp"
-            android:layout_height="match_parent"
-            android:columnCount="2"
-            android:rowCount="3"
-            tools:ignore="MissingConstraints">
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/border">
-
-                <View
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/ic_nasgor" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Makes"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="140dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:background="@drawable/border">
-
-                <View
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/ic_kopi" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mikes"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="140dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/border">
-
-                <View
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/ic_game" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hobby"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="140dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="60dp"
-                android:background="@drawable/border">
-
-                <View
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/ic_money" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Interest"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="140dp"/>
-
-            </RelativeLayout>
-
-
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        app:cardCornerRadius="12sp">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120sp"
-            android:layout_marginTop="10dp"
-            android:layout_rowSpan="2"
-            android:layout_columnSpan="2"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="@drawable/ic_citacita" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_rice"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/rice"
+                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/makanan_favorit_home"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cita-Cita"
-                android:textStyle="bold"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="140dp"/>
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/img_rice"
+                android:layout_toRightOf="@+id/img_rice"
+                android:text="Nasi Goreng"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background1"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_coffe"
+                android:layout_below="@id/img_rice"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/coffe"
+                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+            <TextView
+                android:id="@+id/minuman_favorit_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_rice"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/img_coffe"
+                android:layout_toRightOf="@+id/img_coffe"
+                android:text="Coffe"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background1"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_hobby"
+                android:layout_below="@id/img_coffe"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/hobby"
+                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+            <TextView
+                android:id="@+id/hobby_favorit_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_coffe"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/img_coffe"
+                android:layout_toRightOf="@+id/img_coffe"
+                android:text="Gaming"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background1"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_interest"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_below="@id/img_hobby"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/interest"
+                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+            <TextView
+                android:id="@+id/interest_favorit_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_hobby"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/img_coffe"
+                android:layout_toRightOf="@+id/img_coffe"
+                android:text="Money"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background1"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_cita2"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_below="@id/img_interest"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/cita2"
+                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+            <TextView
+                android:id="@+id/cita2_favorit_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_interest"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_toEndOf="@+id/img_coffe"
+                android:layout_toRightOf="@+id/img_coffe"
+                android:text="Programmer"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background1"
+                android:textStyle="bold" />
 
         </RelativeLayout>
-
-        </GridLayout>
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 
 
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
 
 
 

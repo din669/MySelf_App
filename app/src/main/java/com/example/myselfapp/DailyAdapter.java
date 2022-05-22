@@ -9,6 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
+
 public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.myviewholder>{
 
     ArrayList<DailyModel> dailyModel;

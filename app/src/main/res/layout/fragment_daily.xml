@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightblue"
+    android:background="@color/white"
     tools:context=".DailyFragment">
 
 
@@ -27,13 +27,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginStart="5dp"
-                    android:text="Daily Activity"
+                    android:text="DAILY ACTIVITY"
                     android:gravity="center"
-                    android:textSize="26sp"
-                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background1"
                     android:fontFamily="@font/roboto" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -69,10 +70,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
-                    android:text="Friends List"
+                    android:text="FRIENDS LIST"
                     android:gravity="center"
-                    android:textSize="26sp"
-                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background1"
                     android:fontFamily="@font/roboto" />
 
                 <androidx.recyclerview.widget.RecyclerView

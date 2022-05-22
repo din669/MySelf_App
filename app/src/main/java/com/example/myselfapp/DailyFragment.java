@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+//NIM    : 10119216
+//Nama   : Muhammad Syarifuddin Rahiman
+//Kelas  : IF-6
+//Tanggal Pengerjaan : 22-05-2022
 
 public class DailyFragment extends Fragment {
 
@@ -73,12 +77,14 @@ public class DailyFragment extends Fragment {
 
         DailyModel daily1 = new DailyModel(R.drawable.ic_sleep, "SLEEP");
         dailyModel.add(daily1);
-        DailyModel daily2 = new DailyModel(R.drawable.ic_game, "GAMING");
+        DailyModel daily2 = new DailyModel(R.drawable.hobby, "GAMING");
         dailyModel.add(daily2);
-        DailyModel daily3 = new DailyModel(R.drawable.ic_nasgor, "MAKAN");
+        DailyModel daily3 = new DailyModel(R.drawable.rice, "MAKAN");
         dailyModel.add(daily3);
-        DailyModel daily4 = new DailyModel(R.drawable.ic_kopi, "MINUM");
+        DailyModel daily4 = new DailyModel(R.drawable.coffe, "MINUM");
         dailyModel.add(daily4);
+        DailyModel daily5 = new DailyModel(R.drawable.ic_sleep, "SLEEP");
+        dailyModel.add(daily5);
 
         recyclerViewDaily.setAdapter(new DailyAdapter(dailyModel));
 
