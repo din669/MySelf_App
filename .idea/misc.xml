@@ -26,10 +26,17 @@
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/font/roboto.xml" value="0.40208333333333335" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/activity_splash_screen.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/activity_viewpager.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_daily.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_galery.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_music.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/fragment_profile.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_daily.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_friendlist.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_galery.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_music.xml" value="0.371875" />
+        <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/layout/items_video.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/menu/bottom_nav.xml" value="0.371875" />
         <entry key="..\:/Users/INTEL/AndroidStudioProjects/Udzapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.317" />
       </map>

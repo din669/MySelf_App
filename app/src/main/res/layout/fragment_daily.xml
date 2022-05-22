@@ -9,9 +9,9 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -31,7 +31,8 @@
                     android:layout_marginBottom="5dp"
                     android:layout_marginStart="5dp"
                     android:text="Daily Activity"
-                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textSize="26sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/roboto" />
 
@@ -69,7 +70,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:text="Friends List"
-                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textSize="26sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/roboto" />
 

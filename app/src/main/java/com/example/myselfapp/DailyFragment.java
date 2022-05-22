@@ -73,16 +73,12 @@ public class DailyFragment extends Fragment {
 
         DailyModel daily1 = new DailyModel(R.drawable.ic_sleep, "SLEEP");
         dailyModel.add(daily1);
-        DailyModel daily2 = new DailyModel(R.drawable.ic_sleep, "SLEEP");
+        DailyModel daily2 = new DailyModel(R.drawable.ic_game, "GAMING");
         dailyModel.add(daily2);
-        DailyModel daily3 = new DailyModel(R.drawable.ic_sleep, "SLEEP");
+        DailyModel daily3 = new DailyModel(R.drawable.ic_nasgor, "MAKAN");
         dailyModel.add(daily3);
-        DailyModel daily4 = new DailyModel(R.drawable.ic_game, "GAMING");
+        DailyModel daily4 = new DailyModel(R.drawable.ic_kopi, "MINUM");
         dailyModel.add(daily4);
-        DailyModel daily5 = new DailyModel(R.drawable.ic_nasgor, "MAKAN");
-        dailyModel.add(daily5);
-        DailyModel daily6 = new DailyModel(R.drawable.ic_kopi, "MINUM");
-        dailyModel.add(daily6);
 
         recyclerViewDaily.setAdapter(new DailyAdapter(dailyModel));
 
@@ -101,6 +97,8 @@ public class DailyFragment extends Fragment {
         friendlistModel.add(friendlist3);
         FriendlistModel friendlist4 = new FriendlistModel(R.drawable.ic_friend4, "Andra");
         friendlistModel.add(friendlist4);
+        FriendlistModel friendlist5 = new FriendlistModel(R.drawable.ic_friend5, "Khamila");
+        friendlistModel.add(friendlist5);
 
         recyclerViewFriendlist.setAdapter(new FriendlistAdapter(friendlistModel));
 

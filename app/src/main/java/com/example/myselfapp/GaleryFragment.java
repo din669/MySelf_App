@@ -3,10 +3,14 @@ package com.example.myselfapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +59,38 @@ public class GaleryFragment extends Fragment {
         }
     }
 
+    RecyclerView recyclerViewGalery;
+    ArrayList<GaleryModel> galeryModel;
+    private StaggeredGridLayoutManager manager;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_galery, container, false);
+        View root = inflater.inflate(R.layout.fragment_galery, container, false);
+
+        recyclerViewGalery = root.findViewById(R.id.rv_galery);
+        manager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
+        recyclerViewGalery.setLayoutManager(manager);
+
+        galeryModel = new ArrayList<>();
+
+        GaleryModel galery1 = new GaleryModel(R.drawable.f_galery1);
+        galeryModel.add(galery1);
+        GaleryModel galery2 = new GaleryModel(R.drawable.f_galery2);
+        galeryModel.add(galery2);
+        GaleryModel galery3 = new GaleryModel(R.drawable.f_galery3);
+        galeryModel.add(galery3);
+        GaleryModel galery4 = new GaleryModel(R.drawable.f_galery4);
+        galeryModel.add(galery4);
+        GaleryModel galery5 = new GaleryModel(R.drawable.f_galery5);
+        galeryModel.add(galery5);
+        GaleryModel galery6 = new GaleryModel(R.drawable.f_galery6);
+        galeryModel.add(galery6);
+
+
+        recyclerViewGalery.setAdapter(new GaleryAdapter(galeryModel));
+
+        return root;
     }
 }
